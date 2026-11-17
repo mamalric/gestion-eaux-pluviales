@@ -2,6 +2,15 @@
 
 <!-- Dernière entrée en haut. Une entrée par session de travail ou par décision. Date au format AAAA-MM-JJ. -->
 
+## 2026-11-17, phase 7 : dépôt, publication et carte du portail
+- Accord de Marius pour la phase 7 (dépôt, publication et carte du hub).
+- Décision de Marius : les 22 stations de la calculette Excel sont publiées avec l'outil, signalées "origine non vérifiée", bien qu'elles aient la forme des fiches Météo-France dont la rediffusion est interdite.
+- Dépôt public https://github.com/mamalric/gestion-eaux-pluviales (branche main, commits sous l'adresse noreply du compte, comme Alizé), site GitHub Pages https://mamalric.github.io/gestion-eaux-pluviales/ construit et vérifié en ligne : 23 et 22 stations, projet par défaut retrouvant la calculette (22,5 m³, vidange en 2 h 05), console vide. Les `.xlsm` et `.claude/` restent hors du dépôt.
+- Portail B27 (dépôt b27-hub, branche dev puis publiée sur main) : carte "Gestion des eaux pluviales" en bêta dans VRD et assainissement, icône `bassin` (celle du favicon) ajoutée à `hub.js`, `tests/verifier_catalogue.py` conforme, carte vérifiée en local puis en ligne, lien vers l'outil. La carte plomberie "Dimensionnement Eaux pluviales" (DTU 60.11, à venir) reste à part.
+- `.claude/launch.json` : chemin du serveur du portail corrigé (barres obliques), le JSON était invalide.
+- Compte GitHub actif remis sur MarckuusS après la publication.
+- Reste à faire : phase 8 (favicon PNG et ICO, image d'aperçu), recette par Antonin, puis carte en ligne.
+
 ## 2026-11-17, phase 6 : stations calculées intégrées à l'outil
 - Décision de Marius : intégrer les coefficients calculés sur données publiques, signalés comme tels, avec les périodes de retour extrapolées marquées.
 - Stations retenues : celles de la calculette Excel qui ont un poste 6 minutes du même nom, et les trois stations de contrôle (Chouilly, Rouen-Boos, Melun), calculées de 2005 à décembre 2024 (fichiers 2025-2026 en mise à jour courante écartés) ; minimum de 15 années valides, soit 3 fois la période de 5 ans (guide CERTU, § 8.3.5.3.2). Résultat : 23 stations de 18,2 (Villacoublay, depuis août 2006) à 19,5 années. Écartées : Saint-Paul-Trois-Châteaux, sans poste 6 minutes ; Auxerre, dont le poste a changé en avril 2013 (89346001 puis 89295001), les deux séries n'étant pas raccordées puisque le guide demande des conditions d'observation stables.
