@@ -2,6 +2,13 @@
 
 <!-- Dernière entrée en haut. Une entrée par session de travail ou par décision. Date au format AAAA-MM-JJ. -->
 
+## 2026-11-17, phase 8 : favicon et image d'aperçu
+- Sur le modèle du Dimensionnement des chaussées : favicon PNG 32 px (coins transparents), ICO 16, 32 et 48 px, icône Apple 180 px (pictogramme blanc sur fond vert plein), image d'aperçu `apercu.jpg` en 1200 x 630 (fond sombre à traînées vertes, pictogramme en tuile au centre pour survivre au recadrage carré de Teams, titre, sous-titre, deux pastilles, pied Outils B27).
+- Rendu par Edge sans interface depuis `favicon.svg` et un gabarit HTML (police Inter chargée depuis Google Fonts pour le seul rendu), puis réduction par Pillow ; le script `faire_images.py` est resté hors du projet.
+- Balises ajoutées : `og:image` (versionnée ?v=1), type, dimensions et texte alternatif, `twitter:card`, liens PNG, ICO et Apple ; description de la page élargie au réseau, aux collecteurs et aux ouvrages.
+- Contrôles : quatre fichiers servis en local avec le bon type, console vide, `verifier-moteur.js` à 182 contrôles conformes ; site republié.
+- Reste à faire : recette par Antonin, puis carte du portail en ligne.
+
 ## 2026-11-17, phase 7 : dépôt, publication et carte du portail
 - Accord de Marius pour la phase 7 (dépôt, publication et carte du hub).
 - Décision de Marius : les 22 stations de la calculette Excel sont publiées avec l'outil, signalées "origine non vérifiée", bien qu'elles aient la forme des fiches Météo-France dont la rediffusion est interdite.
