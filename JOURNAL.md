@@ -2,6 +2,11 @@
 
 <!-- Dernière entrée en haut. Une entrée par session de travail ou par décision. Date au format AAAA-MM-JJ. -->
 
+## 2026-11-17, thème clair par défaut
+- Demande de Marius pour toutes les calculettes B27 : la page s'ouvre en thème clair, le réglage sombre du système n'est plus suivi ; le bouton de bascule reste, et le choix qu'il mémorise dans le navigateur est gardé.
+- Script du <head> (thème appliqué avant le premier rendu) et initTheme modifiés : plus de lecture de prefers-color-scheme ni d'écoute de son changement. Même changement dans les quatre autres calculettes de même charte ou de même mécanique (dimensionnement des chaussées, températures de référence, calculette ECS, sélectionneur de radiateurs) ; RefriSelect et l'étiquette DPE n'ont pas de thème sombre. Contrôle du moteur toujours à 182 contrôles conformes.
+- Vérifié dans le navigateur avec un système réglé en sombre : page en clair, bascule et mémorisation du choix, console vide.
+
 ## 2026-11-17, phase 8 : favicon et image d'aperçu
 - Sur le modèle du Dimensionnement des chaussées : favicon PNG 32 px (coins transparents), ICO 16, 32 et 48 px, icône Apple 180 px (pictogramme blanc sur fond vert plein), image d'aperçu `apercu.jpg` en 1200 x 630 (fond sombre à traînées vertes, pictogramme en tuile au centre pour survivre au recadrage carré de Teams, titre, sous-titre, deux pastilles, pied Outils B27).
 - Rendu par Edge sans interface depuis `favicon.svg` et un gabarit HTML (police Inter chargée depuis Google Fonts pour le seul rendu), puis réduction par Pillow ; le script `faire_images.py` est resté hors du projet.
